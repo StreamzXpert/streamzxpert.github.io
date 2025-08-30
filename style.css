@@ -1,0 +1,131 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700|Montserrat:400,700');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif; /* Keeping Montserrat as chosen */
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-section {
+    background: #2a5b9b;
+    background: linear-gradient(180deg, rgba(42, 91, 155, 1) 0%, rgba(0, 255, 225, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    margin-bottom: 0px; /* Removed space below logo */
+}
+
+.logo {
+    width: 60vw;
+    height: auto;
+    max-width: 600px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(54deg) brightness(103%) contrast(101%);
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+    margin-top: 0px; /* Ensure no top margin */
+    font-weight: 700; /* Changed to bold */
+    color: #fff;
+}
+
+/* Word Carousel Styles - exactly as your concept */
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: #fff; /* Changed to pure white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 36px;
+    margin-top: 0px; /* Ensure no top margin */
+}
+
+.wordCarousel > div {
+    overflow: hidden;
+    position: relative;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: 10px; /* Adjusted to move text down a little more */
+}
+
+.wordCarousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wordCarousel li {
+    font-family: "Montserrat", sans-serif; /* Changed font to Montserrat */
+    color: #fff; /* Changed to pure white */
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+    line-height: 45px; /* Set line-height to match height for vertical centering */
+}
+
+/* Animation for 2 items - flip2 */
+.flip2 {
+    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.cta-button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -180px; }
+}
+
+.legal-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* White background */
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left; /* Align text left within the container */
+    color: #000; /* Black text */
+}
+
+.legal-container h1 {
+    color: #000; /* Make h1 inside legal-container black */
+}
+
+/* Specific styling for logo on legal page */
+.legal-page .logo {
+    max-width: 300px; /* Adjusted size */
+    width: auto;
+}
